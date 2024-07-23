@@ -1,0 +1,227 @@
+.date-picker {
+    display: flex;
+    width: 260px;
+    height: 59px;
+    overflow: hidden;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+    padding: 26.5px 16px 6.5px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+}
+// /* Custom styles for react-datepicker */
+// .react-datepicker {
+//   @apply bg-white border border-gray-300 rounded-md shadow-lg;
+// }
+
+// .react-datepicker__header {
+//   @apply bg-blue-500 text-white;
+// }
+
+// .react-datepicker__day--selected, .react-datepicker__day--keyboard-selected {
+//   @apply bg-blue-500 text-white;
+// }
+
+// .react-datepicker__day--today {
+//   @apply text-blue-500;
+// }
+.react-datepicker {
+    font-size: 15px;
+    border: 0;
+    display: inherit;
+    &__header {
+        background: transparent;
+        border-bottom: 0;
+        > div {
+            position: relative;
+            height: 40px;
+            .today-btn {
+                display: block;
+                height: 28px;
+                padding: 4px;
+                border: 1px solid #bdbdbc;
+                color: #222222;
+                border-radius: 4px;
+                background: transparent;
+                position: absolute;
+                left: 48px;
+                width: 70px;
+            }
+            .calender-sel {
+                font-size: 18px;
+                color: #222;
+                font-weight: 700;
+                position: relative;
+                & + .calender-sel {
+                    margin-left: 1px;
+                    &::after {
+                        position: absolute;
+                        display: inline-block;
+                        content: '';
+                        width: 1px;
+                        height: 16px;
+                        top: 13px;
+                        left: -1px;
+                        background: #e9e9e9;
+                    }
+                }
+                .drop-down {
+                    border: 0;
+                    height: 40px;
+                    padding: 8px 32px 8px 16px;
+
+                    > button {
+                        &::before {
+                            right: 10px;
+                        }
+                    }
+                    &.on {
+                        background: transparent;
+                        > button::before {
+                            top: 14px;
+                        }
+                    }
+                }
+                .list {
+                    > li {
+                        text-align: left;
+                        font-weight: 400;
+                    }
+                }
+                &:first-child {
+                    margin-left: 10px;
+                }
+                option {
+                    width: 142px;
+                }
+            }
+            > button {
+                width: 40px;
+                height: 40px;
+                background: #f4f4f4;
+                border-radius: 4px;
+                &:first-child {
+                    position: absolute;
+                    left: 0;
+                    background-image: url(../assets/icon/ico_calendar_left.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &:last-child {
+                    position: absolute;
+                    right: 0;
+                    background-image: url(../assets/icon/ico_calendar_left.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__month {
+        margin: 0;
+    }
+    &__day-name {
+        color: #656464;
+        width: 3.63rem;
+        height: 3.63rem;
+        margin: 0;
+        line-height: 2.63;
+    }
+    &__day {
+        width: 3.63rem;
+        line-height: 3.63rem;
+        position: relative;
+        color: #222;
+        margin: 0;
+        border-radius: 50%;
+        &--selected {
+            background: #ffc737;
+            border-radius: 50%;
+            &.greendot {
+                &::after {
+                    background-color: #0b9c38;
+                }
+            }
+            &.reddot {
+                &::after {
+                    background-color: #ed2f15;
+                }
+            }
+        }
+        // 다음달 날짜가 나올 경우에 disabled 클래스 추가함
+        // 사용방법 : react-datepicker__day react-datepicker__day--disabled 클래스 같이 사용해야 함
+        &--disabled {
+            color: #919190;
+        }
+        &:hover {
+            border-radius: 50%;
+            background: #f0f0f0;
+        }
+    }
+}
+.react-datepicker__day.random {
+    color: red;
+}
+
+.reddot::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #ea8c80;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translateX(-50%);
+    &.react-datepicker__day--selected {
+        &::after {
+            background-color: #ed2f15;
+        }
+    }
+}
+.greendot {
+    &::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #85ce9b;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        left: 50%; /* Adjust as needed */
+        transform: translateX(-50%);
+    }
+}
+.calendar-info {
+    position: absolute;
+    bottom: 14px;
+    left: 30px;
+    .info {
+        display: inline-block;
+        position: relative;
+        &.greendot {
+            margin-right: 10px;
+            &::after {
+                left: -8px;
+            }
+        }
+        &.reddot {
+            margin-left: 22px;
+            &::after {
+                left: -8px;
+            }
+        }
+    }
+    .divider {
+        position: absolute;
+        top: 6px;
+        display: inline-block;
+        height: 12px;
+        width: 1px;
+        background-color: #e9e9e9;
+    }
+}

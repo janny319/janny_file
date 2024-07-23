@@ -1,0 +1,36 @@
+.acount-setting {
+    width: 100%;
+    padding: 20px;
+    .info-textbox,
+    .info-select {
+        width: 45%;
+        align-items: center;
+        justify-content: flex-start;
+        .acc-sel {
+            position: relative;
+            width: 100%;
+            flex: 1;
+            .drop-down {
+                height: 40px;
+            }
+        }
+        input[type='text'] {
+            width: 100%;
+            flex: 1;
+        }
+        > span {
+            width: 180px;
+            letter-spacing: -0.24px;
+            margin-right: 20px;
+        }
+    }
+    .radio-btn {
+        & + input {
+            margin-left: 12px;
+        }
+    }
+    > .btn-list {
+        margin-top: 20px;
+        padding: 20px 0 0 0;
+    }
+}

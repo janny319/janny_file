@@ -1,0 +1,255 @@
+.react-datepicker-popper {
+    z-index: 100;
+    background-color: white;
+    left: 185px !important;
+    top: -6px !important;
+    border: 1px solid #222;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px #363b4233;
+    .validation-error {
+        position: relative;
+        width: fit-content;
+        padding: 0 20px 20px 20px;
+        top: auto;
+        transform: none;
+        left: auto;
+    }
+    &.week {
+        left: 124px !important;
+    }
+    &.month {
+        left: 93px !important;
+        .react-datepicker {
+            &__month {
+                height: 172px;
+            }
+            &__month-text {
+                padding: 11px 16px;
+                color: #222;
+                margin: 0;
+                &--today {
+                    font-weight: 400;
+                }
+                &--in-range {
+                    background: #fff9eb;
+                }
+                &--in-selecting-range {
+                    background: #fff9eb;
+                }
+                &--selected {
+                    background: #ffc737;
+                    border-radius: 100px;
+                }
+                &--range-end {
+                    background: #ffc737;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+}
+
+.shortcuts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid #ddd;
+    min-width: 120px;
+    button {
+        cursor: pointer;
+        padding: 9px 12px;
+        height: 36px;
+        background-color: #ffffff;
+        border: none;
+        color: #000000;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        text-align: left;
+        border-bottom: 1px solid #e9e9e9;
+        &:hover {
+            background-color: #fff9eb;
+        }
+    }
+}
+
+.react-datepicker__day--in-selecting-range:not(
+        .react-datepicker__day--in-range,
+        .react-datepicker__month-text--in-range,
+        .react-datepicker__quarter-text--in-range,
+        .react-datepicker__year-text--in-range
+    ) {
+    background: #fff9eb;
+    border-radius: 0;
+}
+
+.calendar-wrap {
+    .react-datepicker {
+        font-family: Arial, sans-serif;
+        &__header {
+            padding-top: 10px;
+            & > div {
+                height: auto;
+            }
+        }
+        &__month {
+            height: 216px;
+        }
+        &__week {
+            margin: 4px 0;
+        }
+        &__month-container {
+            flex-grow: 1;
+            padding: 20px;
+            & + .react-datepicker__month-container {
+                padding-left: 0;
+            }
+        }
+        &__current-month {
+            font-size: 16px;
+            font-weight: 700;
+            color: #222222;
+            padding: 0 0 6px 0;
+        }
+        &__day {
+            width: 2rem;
+            line-height: normal;
+            padding: 8px 0;
+            font-size: 14px;
+            &--in-range {
+                background-color: #fff9eb;
+                border-radius: 0;
+            }
+            &--outside-month {
+                color: #919190;
+                background: transparent !important;
+                &:hover {
+                    background: transparent;
+                }
+            }
+            &--today {
+                font-weight: normal;
+            }
+            &--outside-month {
+                background: transparent;
+            }
+            &--keyboard-selected {
+                background: #fff9eb;
+            }
+            &--selected {
+                background: #ffc737;
+                border-radius: 50% !important;
+                &.react-datepicker__day--in-selecting-range {
+                    background: #ffc737;
+                }
+            }
+            &--range-end {
+                background: #ffc737 !important;
+                border-radius: 50% !important;
+            }
+        }
+        &__day-name {
+            height: auto;
+            line-height: normal;
+            width: 32px;
+            padding: 5px 0;
+            font-size: 13px;
+        }
+        &__navigation {
+            top: 26px;
+            &--previous {
+                left: 16px;
+            }
+            &--next {
+                right: 16px;
+            }
+        }
+        &__navigation-icon {
+            &--previous {
+                &::before {
+                    border-color: #222222;
+                    border-width: 2px 2px 0 0;
+                    border-radius: 1px;
+                }
+            }
+            &--next {
+                &::before {
+                    border-color: #222222;
+                    border-width: 2px 2px 0 0;
+                    border-radius: 1px;
+                }
+            }
+        }
+        &__input-container {
+            display: flex;
+            flex-direction: column;
+            .tit {
+                font-size: 14px;
+                line-height: 18px;
+                color: #4f4e4d;
+                margin-bottom: 4px;
+            }
+            > input {
+                width: 316px;
+                font-size: 16px;
+                line-height: 21px;
+                color: #222;
+            }
+            &:hover {
+                border-color: #222;
+            }
+            &.active {
+                border-color: #ffc737;
+                background-color: #fff9eb;
+                > input {
+                    background-color: transparent;
+                    &:focus {
+                        border: none !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.react-datepicker__triangle {
+    display: none;
+}
+
+.react-datepicker__tab-loop {
+    margin-right: 0px !important;
+}
+
+.calendar-with-shortcuts {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.date-picker {
+    .date-tit {
+        .end {
+            margin-left: 64px;
+            &.mon-tit {
+                margin-left: 38px;
+            }
+        }
+    }
+    input {
+        &:focus {
+            border: none;
+            box-shadow: none;
+            background: transparent;
+        }
+    }
+    &.on {
+        background: #fff9eb;
+        input {
+            background: #fff9eb;
+            &:focus {
+                border: 0;
+                box-shadow: unset;
+            }
+        }
+    }
+}

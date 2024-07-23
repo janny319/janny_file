@@ -1,0 +1,77 @@
+.drop-down .drop-down-btn.on::before {
+    top: 12px;
+    transform: rotate(180deg);
+}
+
+.list {
+    width: 100%;
+    max-height: 216px;
+    border-radius: 4px;
+    border: 1px solid #222;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    > li {
+        width: 100%;
+        min-height: 36px;
+        padding: 7px 12px;
+        font-size: 16px;
+        color: #222;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff9eb;
+        }
+    }
+}
+.select {
+    position: relative;
+    > .drop-down {
+        padding: 8px 48px 8px 16px;
+    }
+    & + .select {
+        margin-left: 6px;
+    }
+    &.disabled {
+        > .drop-down {
+            background-color: #f4f4f4;
+            color: #919190;
+        }
+    }
+    &.nomal {
+        min-width: 120px;
+        > .drop-down {
+            height: 40px;
+            padding: 0 48px 0 16px;
+        }
+    }
+    &.asign {
+        min-width: 50%;
+    }
+    &.small {
+        min-width: 90px;
+        height: 40px;
+        > .drop-down {
+            height: 40px;
+            padding: 0 48px 0 16px;
+        }
+    }
+    &.common-select-box {
+        > .drop-down {
+            height: 44px;
+            border-radius: 4px 0 0 4px;
+        }
+    }
+    // 지식관리
+    &.know {
+        margin-left: 0;
+        width: calc(100% - 200px);
+        color: #919190;
+    }
+    &.noti {
+        color: #919190;
+        margin-left: 12px;
+        min-width: 260px;
+    }
+}

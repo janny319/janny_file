@@ -1,0 +1,132 @@
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 680px;
+    border-radius: 30px;
+    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 70px 60px;
+    &-tit {
+        font-size: 32px;
+        color: #222;
+        font-weight: 600;
+        text-align: center;
+    }
+    &-inquiry {
+        display: block;
+        text-align: center;
+    }
+    &-wrap {
+        display: flex;
+        align-items: center;
+    }
+    &-box {
+        margin-top: 50px;
+    }
+    &-option {
+        & + & {
+            margin-top: 30px;
+        }
+        label {
+            display: block;
+            margin-right: 10px;
+            min-width: 120px;
+            font-size: 18px;
+            color: #222;
+            font-weight: 900;
+        }
+        input {
+            width: 100%;
+            border: 1px solid #d3d3d3;
+            padding: 16px;
+            border-radius: 4px;
+        }
+        &.error {
+            input {
+                border: 1px solid #d51900;
+            }
+        }
+        .error-info {
+            font-size: 15px;
+            color: #d51900;
+            margin: 10px 0 0 150px;
+        }
+    }
+    &-checkbox {
+        margin: 30px 0 0 130px;
+        label {
+            cursor: pointer;
+            font-size: 16px;
+            color: #222;
+        }
+        input[type='checkbox'] {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+        input[type='checkbox']:checked {
+            border: 0px;
+            background: #ffc737;
+            background-image: url('./../assets/icon/ico_check.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &-btn {
+        padding: 12px 70px;
+        background: #393837;
+        color: #fff;
+        border-radius: 4px;
+        & + & {
+            margin-left: 10px;
+        }
+    }
+    &-white {
+        color: #4f4e4d;
+        background: #fff;
+        border: 1px solid #4f4e4d;
+        font-weight: 900;
+    }
+    &-etc {
+        margin-top: 50px;
+        text-align: center;
+    }
+    &-txt {
+        font-size: 15px;
+        color: #656464;
+    }
+    &-info {
+        width: 240px;
+        margin: 20px auto 0 auto;
+    }
+    &-num {
+        display: block;
+        font-size: 15px;
+        color: #656464;
+        text-align: left;
+        .num {
+            color: #222222;
+        }
+    }
+    &-mail {
+        display: block;
+        font-size: 15px;
+        color: #656464;
+        text-align: left;
+        .mail {
+            color: #222222;
+        }
+    }
+}
+.btn-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+.logo {
+    text-align: center;
+}

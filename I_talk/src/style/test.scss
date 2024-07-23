@@ -1,0 +1,46 @@
+// /* Custom styles for react-datepicker */
+// .react-datepicker {
+//   @apply bg-white border border-gray-300 rounded-md shadow-lg;
+// }
+
+// .react-datepicker__header {
+//   @apply bg-blue-500 text-white;
+// }
+
+// .react-datepicker__day--selected, .react-datepicker__day--keyboard-selected {
+//   @apply bg-blue-500 text-white;
+// }
+
+// .react-datepicker__day--today {
+//   @apply text-blue-500;
+// }
+
+
+.react-datepicker__day.random {
+    color: red;
+    
+}
+
+.reddot::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  top: -29px; /* Adjust as needed */
+  right: -12px; /* Adjust as needed */
+}
+
+.greendot::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+  top: -29px; /* Adjust as needed */
+  right: -12px; /* Adjust as needed */
+}

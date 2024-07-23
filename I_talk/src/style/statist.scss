@@ -1,0 +1,214 @@
+.tap-wrap {
+    &.statist {
+        .tab-btn {
+            padding: 20px 98px;
+        }
+        & + .tab-cont {
+            padding: 20px 0;
+        }
+    }
+}
+.tab-cont {
+    &.statist {
+        padding: 0;
+        .indicator-wrap {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #e9e9e9;
+            border-radius: 6px;
+            background: #fff;
+            .tit-wrap {
+                border-bottom: 1px solid #e9e9e9;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                padding-bottom: 12px;
+                > h4 {
+                    color: #222222;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                .counselor-state {
+                    margin-bottom: 0;
+                }
+                .channel-wrap {
+                    display: flex;
+                    align-items: center;
+                    .counselor-state {
+                        margin-bottom: 0;
+                    }
+                    .btn {
+                        margin-left: 8px;
+                    }
+                }
+            }
+            .indicator-graph {
+                padding: 20px 0;
+                display: flex;
+                .graph {
+                    flex: 33.33;
+                    > h4 {
+                        font-size: 16px;
+                        color: #656464;
+                        margin-bottom: 12px;
+                    }
+                    .indicator-box {
+                        .indicator {
+                            flex: 0.5;
+                            > dt {
+                                font-size: 18px;
+                                color: #656464;
+                            }
+                            > dd {
+                                font-size: 20px;
+                                color: #222222;
+                            }
+                        }
+                        & + .indicator-box {
+                            padding-top: 32px;
+                            margin-bottom: 0;
+                            border-top: 1px solid #e9e9e9;
+                        }
+                    }
+                    & + .graph {
+                        border-left: 1px solid #e9e9e9;
+                    }
+                    &:nth-child(2) {
+                        padding: 0 20px;
+                    }
+                    &:last-child {
+                        padding-left: 20px;
+                    }
+                    &.row {
+                        display: flex;
+                        .pie-box,
+                        .bar-box {
+                            flex: 0.5;
+                            padding: 0 20px;
+                            h4 {
+                                font-size: 16px;
+                                color: #656464;
+                                margin-bottom: 12px;
+                                > span {
+                                    margin-left: 6px;
+
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    color: #222222;
+                                }
+                            }
+                            & + .pie-box {
+                                border-left: 1px solid #e9e9e9;
+                            }
+                        }
+                        .bar-box {
+                            flex: 0.5;
+                        }
+                        .pie-box + .bar-box {
+                            border-left: 1px solid #e9e9e9;
+                        }
+                    }
+                    &.both {
+                        .pie-box {
+                            flex: 0.3;
+                            padding: 0;
+                            padding-right: 20px;
+                        }
+                        .bar-box {
+                            flex: 0.7;
+                            padding: 0;
+                        }
+                        &:nth-child(2) {
+                            padding: 0;
+                        }
+                        &:first-child {
+                            .bar-box {
+                                padding: 0 20px;
+                            }
+                        }
+                        &:last-child {
+                            .pie-box {
+                                padding-left: 20px;
+                            }
+                            .bar-box {
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table-cont {
+            margin-top: 20px;
+            .table-basic {
+                &.statist {
+                    border-top: 2px solid #fff;
+                    border-left: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                    > thead {
+                        position: relative;
+                        height: 96px;
+                        > tr {
+                            th {
+                                border: 1px solid #e9e9e9;
+                                padding: 0;
+                                color: #393837;
+                                &.align-left {
+                                    padding-left: 12px;
+                                }
+                            }
+                        }
+                    }
+                    > tbody {
+                        > tr {
+                            td {
+                                border: 1px solid #e9e9e9;
+                            }
+                        }
+                    }
+                    .order-filter {
+                        height: 96px;
+                    }
+                }
+            }
+        }
+        .indicator-tab {
+            border: 1px solid #d3d3d3;
+            border-radius: 6px;
+            .mes-wrap {
+                .mes-tit {
+                    > h4 {
+                        min-width: 102px;
+                    }
+                }
+            }
+        }
+        .drop-down {
+            > button.big {
+                width: 186px;
+            }
+        }
+        .search-input {
+            > input {
+                width: 206px;
+            }
+        }
+        .tab-cont {
+            padding: 20px;
+        }
+    }
+    // 공지사항 관리
+    .statist-cont {
+        .grid-wrap {
+            margin-top: 20px;
+            .btn-list {
+                border-top: 0;
+                border-bottom: 1px solid #f4f4f4;
+                padding: 10px 20px;
+            }
+            .grid-con {
+                padding: 20px;
+            }
+        }
+    }
+}

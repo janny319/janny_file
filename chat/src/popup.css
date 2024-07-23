@@ -1,0 +1,267 @@
+.floating-popup {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-width:360px;
+    max-width:720px;
+    z-index: 1000;
+    display:none;
+}
+.dimd{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.floating-popup.visible {
+    display:block;
+}
+
+.popup-content {
+    width:100%;
+    padding: 20px 16px 10px 16px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    background-color:#fff;
+    border-radius: 8px 8px 0 0;
+    transition: bottom 0.3s ease-in-out;
+    z-index:999;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-list{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly
+}
+.btn-list > button{
+    width:110px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.btn-list > button span{
+    width:100%;
+    text-align:center;
+}
+.btn-list > button > i{
+    width:54px;
+    height:54px;
+    display:inline-block;
+    margin-bottom:10px;
+}
+.btn-list > button > i.camera{
+    background:url("./images/ico_upload_camera.svg") 0 0 / 100% no-repeat;
+}
+.btn-list > button > i.album{
+    background:url("./images/ico_upload_image.svg") 0 0 / 100% no-repeat;
+}
+.btn-list > button > i.file{
+    background:url("./images/ico_upload_file.svg") 0 0 / 100% no-repeat;
+}
+.alert-popup{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.alert-popup .alert-content{
+    width:340px;
+    height:fit-content;
+    padding:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color:#fff;
+    border-radius:8px;
+}
+.alert-popup .alert-content > p{
+    width:100%;
+    background-color:#f0f3f8;
+    border-radius:8px;
+    padding:30px 32px;
+    font-size:14px;
+    line-height:1.57;
+    color:#272e35;
+    text-align:center;
+}
+.pop-btn-list{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px;
+  }
+  .btn{
+    min-width:132px;
+    height:40px;
+    line-height:40px;
+    padding:0 16px;
+    border-radius:6px;
+    text-align:center;
+  }
+  .btn + .btn{
+    margin-left:16px;
+  }
+  .btn.white{
+    background-color:#fff;
+    border:1px solid #cfd6dd;
+  }
+  .btn.violet{
+    background-color:#4e47d6;
+    color:#fff;
+  }
+
+  @media all and (min-width:280px) and (max-width:720px) {
+    .floating-popup {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        min-width:36rem;
+        max-width:72rem;
+        z-index: 1000;
+        display:none;
+    }
+    .dimd{
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color:rgba(0, 0, 0, 0.5);
+    }
+
+    .floating-popup.visible {
+        display:block;
+    }
+
+    .popup-content {
+        width:100%;
+        padding: 2rem 1.6rem 1rem 1.6rem;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+        background-color:#fff;
+        border-radius: 0.8rem 0.8rem 0 0;
+        transition: bottom 0.3s ease-in-out;
+        z-index:999;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+    .btn-list{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly
+    }
+    .btn-list > button{
+        width:11rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .btn-list > button span{
+        width:100%;
+        text-align:center;
+    }
+    .btn-list > button > i{
+        width:5.4rem;
+        height:5.4rem;
+        display:inline-block;
+        margin-bottom:1rem;
+    }
+    .btn-list > button > i.camera{
+        background:url("./images/ico_upload_camera.svg") 0 0 / 100% no-repeat;
+    }
+    .btn-list > button > i.album{
+        background:url("./images/ico_upload_image.svg") 0 0 / 100% no-repeat;
+    }
+    .btn-list > button > i.file{
+        background:url("./images/ico_upload_file.svg") 0 0 / 100% no-repeat;
+    }
+    .alert-popup{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    .alert-popup .alert-content{
+        width:34rem;
+        height:fit-content;
+        padding:3rem;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background-color:#fff;
+        border-radius:0.8rem;
+    }
+    .alert-popup .alert-content > p{
+        width:100%;
+        background-color:#f0f3f8;
+        border-radius:0.8rem;
+        padding:3rem 3.2rem;
+        font-size:1.4rem;
+        line-height:1.57;
+        color:#272e35;
+        text-align:center;
+    }
+    .pop-btn-list{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top:2rem;
+      }
+      .btn{
+        min-width:13.2rem;
+        height:4rem;
+        line-height:4rem;
+        padding:0 1.6rem;
+        border-radius:0.6rem;
+        text-align:center;
+      }
+      .btn + .btn{
+        margin-left:1.6rem;
+      }
+      .btn.white{
+        background-color:#fff;
+        border:1px solid #cfd6dd;
+      }
+      .btn.violet{
+        background-color:#4e47d6;
+        color:#fff;
+      }
+  }

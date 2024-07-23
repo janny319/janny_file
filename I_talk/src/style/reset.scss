@@ -1,0 +1,162 @@
+/*reset*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,
+samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,
+th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  -webkit-print-color-adjust: exact;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  word-break: break-all;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+nav ul,ul,ol,li {
+  list-style: outside none none;
+}
+blockquote,q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+a:link,a:visited,a:hover,a:active {
+  text-decoration: none;
+  display:inline-block;
+}
+hr {
+  display: none;
+}
+em,address,i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+fieldset {
+  border: 0 none;
+}
+input {
+  border: none;
+}
+input,select {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+input[type="submit"],input[type="reset"],input[type="button"] {
+  border: 0;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  background:none;
+  cursor: pointer;
+}
+textarea {
+  margin: 0;
+  padding: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+caption,legend {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  line-height: normal;
+  font-size: medium;
+  opacity: 0;
+  word-break: break-all;
+}
+fieldset,legend {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+* {
+  // scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: 18px;
+  background-clip: padding-box;
+  border:4px solid transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+/*프로젝트별 개별 설정*/
+html,body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+}
+input,
+select,
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+input[type="radio"],input[type="checkbox"],button,label {
+  -webkit-tap-highlight-color: transparent;
+}
+input[type="date"]::-ms-clear {
+  display: none;
+}
+input[type="date"]::-ms-reveal {
+  display: none;
+}
+input:active {
+    background-color: transparent;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

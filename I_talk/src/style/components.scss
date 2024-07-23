@@ -1,0 +1,75 @@
+//Drop down
+.drop-down {
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    position: relative;
+    > button {
+        &.big {
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .tit {
+            font-size: 14px;
+            line-height: 18px;
+            color: #4f4e4d;
+            margin-bottom: 4px;
+        }
+        .cont {
+            font-size: 16px;
+            line-height: 21px;
+            color: #222;
+        }
+    }
+    &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: url('@/assets/icon/ico_arr_down.svg') 0 0 / 100% no-repeat;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px;
+    }
+    & + .drop-down {
+        margin-left: 6px;
+    }
+    & + .border-box {
+        margin-left: 6px;
+    }
+    .list {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #222;
+        background-color: #fff;
+        position: absolute;
+        top: 103%;
+        left: 0;
+        > li {
+            width: 100%;
+            padding: 7.5px 12px;
+            font-size: 16px;
+            color: #222;
+        }
+    }
+}
+.search-input {
+    display: flex;
+    flex-direction: column;
+    .tit {
+        font-size: 14px;
+        line-height: 18px;
+        color: #4f4e4d;
+        margin-bottom: 4px;
+    }
+    > input {
+        width: 316px;
+        font-size: 16px;
+        line-height: 21px;
+        color: #222;
+    }
+}

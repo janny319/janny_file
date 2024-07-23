@@ -1,0 +1,22 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="14" fill="#FFC737"/>
+    <circle cx="14" cy="14" r="14" fill="#fff" fill-opacity=".3"/>
+    <mask id="gd6o51wsea" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+        <circle cx="14" cy="14" r="14" fill="#E44040"/>
+        <circle cx="14" cy="14" r="14" fill="#fff" fill-opacity=".2"/>
+    </mask>
+    <g mask="url(#gd6o51wsea)">
+        <ellipse cx="14" cy="24" rx="9" ry="8" fill="#fff"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 20a.5.5 0 0 0 .5.5H17a5.5 5.5 0 0 0 5.5-5.5v-2a.5.5 0 0 0-1 0v2a4.5 4.5 0 0 1-4.5 4.5h-1.5a.5.5 0 0 0-.5.5z" fill="#A28C77"/>
+        <path d="M7 9a3 3 0 1 0 0 6V9zM21 9a3 3 0 1 1 0 6V9z" fill="#4C3E31"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 3.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" fill="#A28C77"/>
+        <ellipse cx="14" cy="12.273" rx="8" ry="7.273" fill="#fff"/>
+        <ellipse cx="14" cy="12.273" rx="6.75" ry="5.818" fill="#EFECE4"/>
+        <ellipse cx="10.75" cy="11.9" rx=".75" ry=".9" fill="#000"/>
+        <ellipse cx="17.25" cy="11.9" rx=".75" ry=".9" fill="#000"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.82 13.826a.25.25 0 0 1 .354-.006 1.196 1.196 0 0 0 1.652 0 .25.25 0 1 1 .348.36c-.65.63-1.699.63-2.348 0a.25.25 0 0 1-.006-.354z" fill="#6D5B57"/>
+        <path d="M15.5 2.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill="#fff"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 3a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="#FF7337"/>
+        <ellipse cx="14.5" cy="20" rx="1.5" ry="1" fill="#4C3E31"/>
+    </g>
+</svg>

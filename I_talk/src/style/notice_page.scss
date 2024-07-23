@@ -1,0 +1,7 @@
+.notice-btn {
+    border: 1px solid #000;
+    padding: 20px;
+    & + & {
+        margin-left: 10px;
+    }
+}

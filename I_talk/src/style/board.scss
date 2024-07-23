@@ -1,0 +1,53 @@
+.table-board {
+    margin-top: 20px;
+    > thead tr {
+        position: relative;
+        background: #f4f4f4;
+        table-layout: unset;
+        display: table-row;
+        width: initial;
+    }
+    th:nth-child(1) {
+        border-top-left-radius: 4px; /* 왼쪽 위 모서리에 border-radius 적용 */
+    }
+    th:nth-child(6) {
+        border-top-right-radius: 4px;
+    }
+    .tit-wrap {
+        display: flex;
+    }
+    .notice {
+        text-align: left;
+    }
+    .new-notice {
+        display: inline-block;
+        padding: 3px 4px;
+        background: #fdeae8;
+        color: #ed2f15;
+        border-radius: 4px;
+    }
+    .board-tit {
+        display: inline-block;
+        &.ellipsis {
+            width: 176px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+.drop-down {
+    &.common-select-box {
+        width: 140px;
+        position: relative;
+        height: 44px;
+        border-radius: 4px 0 0 4px;
+        padding: 9px 12px;
+        &.on > button::before {
+            top: 13px;
+        }
+        .list {
+            z-index: 2;
+        }
+    }
+}
